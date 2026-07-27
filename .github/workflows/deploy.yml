@@ -1,7 +1,10 @@
-name: Build and Deploy
+name: Next.js CI/CD
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -13,16 +16,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Type Check
+      - name: Run Type Check
         run: npm run type-check
 
-      - name: Build Project
+      - name: Build Next.js Application
         run: npm run build
