@@ -35,23 +35,25 @@ const Header: React.FC = () => {
         {/* Nav */}
         <nav className="hidden md:flex items-center gap-8">
           <a
-            href="#roles"
-            className="text-deploy-slate hover:text-deploy-white text-sm transition-colors font-mono text-xs tracking-wide"
-          >
-            Browse Roles
-          </a>
-          <a
-            href="#how-it-works"
-            className="text-deploy-slate hover:text-deploy-white text-sm transition-colors font-mono text-xs tracking-wide"
-          >
-            How It Works
-          </a>
-          <a
-            href="#placed"
-            className="text-deploy-slate hover:text-deploy-white text-sm transition-colors font-mono text-xs tracking-wide"
-          >
-            Placed
-          </a>
+  href="#roles"
+  className="text-deploy-slate hover:text-deploy-white text-sm transition-colors font-mono tracking-wide"
+>
+  Browse Roles
+</a>
+
+<a
+  href="#how-it-works"
+  className="text-deploy-slate hover:text-deploy-white text-sm transition-colors font-mono tracking-wide"
+>
+  How It Works
+</a>
+
+<a
+  href="#placed"
+  className="text-deploy-slate hover:text-deploy-white text-sm transition-colors font-mono tracking-wide"
+>
+  Placed
+</a>
         </nav>
 
         {/* CTA */}
